@@ -1,0 +1,124 @@
+_dataset:
+  class: Tavakolan2017
+  code: Tavakolan2017
+  doi: 10.1371/journal.pone.0174161
+  interval:
+  - 0
+  - 3
+  n_subjects: 12
+  paradigm: imagery
+acquisition:
+  channel_types:
+    eeg: 32
+  filters:
+    bandpass:
+    - 0.1
+    - 100
+  hardware: EGI Geodesic Net Amps 400 series
+  impedance_threshold_kohm: 50
+  line_freq: 60.0
+  montage: GSN-HydroCel-32
+  n_channels: 32
+  reference: Cz
+  sampling_rate: 1000.0
+  sensor_type: Ag/AgCl sponge
+bci_application:
+  applications:
+  - motor_control
+  - rehabilitation
+  environment: laboratory
+cross_validation:
+  cv_folds: 10
+  cv_method: 10x10-fold
+  evaluation_type:
+  - within_subject
+data_structure:
+  n_trials: 2880
+  n_trials_per_class:
+    rest: 20
+    right_elbow_flexion: 20
+    right_hand: 20
+  trials_context: 12 subjects x 4 sessions x 60 trials (20 per class)
+documentation:
+  country: CA
+  data_url: https://zenodo.org/records/18967205
+  doi: 10.1371/journal.pone.0174161
+  ethics_approval:
+  - Simon Fraser University Office of Research Ethics
+  institution: Simon Fraser University
+  institution_department: MENRVA Research Group, Schools of Mechatronic Systems Engineering and Engineering Science
+  investigators:
+  - Mojgan Tavakolan
+  - Zack Frehlick
+  - Xinyi Yong
+  - Carlo Menon
+  keywords:
+  - motor imagery
+  - EEG
+  - upper extremity
+  - same limb
+  - time-domain features
+  - SVM
+  - BCI
+  license: CC0-1.0
+  publication_year: 2017
+  repository: Zenodo
+  senior_author: Carlo Menon
+experiment:
+  class_labels:
+  - rest
+  - right_hand
+  - right_elbow_flexion
+  events:
+    rest: 1
+    right_elbow_flexion: 3
+    right_hand: 2
+  feedback_type: none
+  instructions: 'REST: relax without movement. MI-GRASP: imagine opening and closing all fingers to grab an object. MI-ELBOW:
+    imagine moving the forearm up and down.'
+  mode: offline
+  n_classes: 3
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: visual cue
+  study_design: 'Three-class motor imagery of the same upper extremity: rest, grasping (MI-GRASP), and elbow flexion (MI-ELBOW).
+    20 trials per class per session, 4 sessions per subject.'
+  synchronicity: synchronous
+  trial_duration: 3.0
+file_format: BCI2000
+paradigm_specific:
+  cue_duration_s: 3.0
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 3.0
+  imagery_tasks:
+  - rest
+  - right_hand
+  - right_elbow_flexion
+participants:
+  health_status: healthy
+  n_subjects: 12
+  species: human
+preprocessing:
+  data_state: continuous
+runs_per_session: 1
+sessions_per_subject: 4
+signal_processing:
+  classifiers:
+  - SVM-RBF
+  feature_extraction:
+  - autoregressive_coefficients
+  - waveform_length
+  - root_mean_square
+  frequency_bands:
+    bandpass:
+    - 6.0
+    - 35.0
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Research
