@@ -1,43 +1,45 @@
 {
-	"Name": "Motor imagery dataset for three imaginary states of the same upper extremity",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC0-1.0",
-	"Authors": [
-		"Mojgan Tavakolan",
-		"Zack Frehlick",
-		"Xinyi Yong",
-		"Carlo Menon"
-	],
-	"EthicsApprovals": [
-		"Simon Fraser University Office of Research Ethics"
-	],
-	"ReferencesAndLinks": [
-		"https://zenodo.org/records/18967205"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.1371/journal.pone.0174161",
-			"URL": "https://zenodo.org/records/18967205"
-		}
-	],
-	"Keywords": [
-		"motor imagery",
-		"EEG",
-		"upper extremity",
-		"same limb",
-		"time-domain features",
-		"SVM",
-		"BCI"
-	],
-	"PublicationYear": 2017
+  "Name": "Motor imagery dataset for three imaginary states of the same upper extremity",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC0-1.0",
+  "Authors": [
+    "Mojgan Tavakolan",
+    "Zack Frehlick",
+    "Xinyi Yong",
+    "Carlo Menon"
+  ],
+  "EthicsApprovals": [
+    "Simon Fraser University Office of Research Ethics"
+  ],
+  "ReferencesAndLinks": [
+    "https://zenodo.org/records/18967205"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.1371/journal.pone.0174161",
+      "URL": "https://zenodo.org/records/18967205"
+    }
+  ],
+  "Keywords": [
+    "motor imagery",
+    "EEG",
+    "upper extremity",
+    "same limb",
+    "time-domain features",
+    "SVM",
+    "BCI"
+  ],
+  "PublicationYear": 2017,
+  "DatasetDOI": "10.82901/nemar.nm000151",
+  "Version": "1.0.0"
 }
