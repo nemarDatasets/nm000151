@@ -1,0 +1,94 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Mojgan Tavakolan": {},
+    "Zack Frehlick": {},
+    "Xinyi Yong": {},
+    "Carlo Menon": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1371/journal.pone.0174161",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000151",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000151",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5061/dryad.6qs86",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "Motor imagery dataset for three imaginary states of the same upper extremity",
+  "license": "CC0-1.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "3.4 GB (49 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".html",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises EEG recordings from 12 healthy subjects performing three-class motor imagery tasks involving the same upper extremity: rest, right hand grasping, and right elbow flexion. Data were collected across 4 sessions per subject using a 32-channel EGI Geodesic Net system at 1000 Hz sampling rate. The dataset includes 2880 trials total and was designed to evaluate time-domain feature extraction and support vector machine classification for brain-computer interface applications.",
+  "methods_description": "EEG data were acquired using a 32-channel EGI Geodesic Net Amps 400 series system with Ag/AgCl sponge sensors referenced to Cz, sampled at 1000 Hz with online bandpass filtering (0.1-100 Hz). Subjects performed three-class motor imagery tasks (rest, right hand grasping, right elbow flexion) cued by visual stimuli, with 20 trials per class per session across 4 sessions. Trial duration was 3 seconds per task.",
+  "keywords": [
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "upper extremity"
+    },
+    {
+      "term": "time-domain features"
+    },
+    {
+      "term": "support vector machines"
+    },
+    {
+      "term": "BCI"
+    },
+    {
+      "term": "same limb"
+    },
+    {
+      "term": "SVM"
+    }
+  ],
+  "source_hash": "0979806cdfc271eb538c29e81b0377867feabe412eba03bcedf63e03c51dea15"
+}
