@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Motor imagery dataset for three imaginary states of the same upper extremity",
-  "description": "This dataset comprises electroencephalographic recordings from 12 healthy subjects performing three-class motor imagery tasks involving the right upper extremity: rest, right hand grasping, and right elbow flexion. Data were collected across 4 sessions per subject using a 32-channel EGI system at 1000 Hz sampling rate, with visual cues guiding 3-second imagery trials. The dataset includes 2,880 trials total and was designed to evaluate time-domain feature extraction and support vector machine classification for brain-computer interface applications. This is a BIDS-formatted derivative of the original 2017 Tavakolan et al. dataset, converted and standardized using the Mother of All BCI Benchmarks (MOABB) framework.",
-  "methods_description": "EEG data were acquired using a 32-channel EGI Geodesic Net Amps 400 series system (GSN-HydroCel-32 montage) at 1000 Hz sampling rate with Cz reference. Online bandpass filtering (0.1-100 Hz) was applied. Subjects performed three-class motor imagery tasks (rest, right hand grasping, right elbow flexion) guided by visual cues, with 20 trials per class per session across 4 sessions. Trial duration was 3 seconds. Impedance threshold was maintained at 50 kOhm.",
+  "description": "This dataset comprises electroencephalographic recordings from 12 healthy subjects performing three motor imagery tasks of the same upper extremity: rest, hand grasping, and elbow flexion. Data were collected across 4 sessions per subject using a 32-channel EEG system sampled at 1000 Hz, with visual cue-based paradigm and no feedback. The dataset includes 2,880 trials total and is annotated with HED 8.4.0 tags. This is a BIDS-formatted derivative dataset, processed from the original Tavakolan et al. (2017) source data, designed for brain-computer interface research and motor control applications.",
+  "methods_description": "EEG data were acquired using a 32-channel Geodesic Net Amps 400 series system (GSN-HydroCel-32 montage) at 1000 Hz sampling rate with Cz reference. Online bandpass filtering (0.1-100 Hz) was applied. Subjects performed three-class motor imagery tasks (rest, right hand grasping, right elbow flexion) with 20 trials per class per session across 4 sessions. Visual cues prompted imagery tasks with 3-second trial duration. Impedance threshold was maintained at 50 kOhm.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,49 +20,28 @@
       "term": "EEG"
     },
     {
-      "term": "brain-computer interfaces"
-    },
-    {
       "term": "BCI"
     },
     {
       "term": "upper extremity"
     },
     {
-      "term": "right hand grasping"
-    },
-    {
-      "term": "right elbow flexion"
+      "term": "motor control"
     },
     {
       "term": "time-domain features"
     },
     {
-      "term": "support vector machines"
-    },
-    {
-      "term": "motor control"
-    },
-    {
-      "term": "classification"
-    },
-    {
-      "term": "machine learning"
-    },
-    {
-      "term": "rehabilitation"
-    },
-    {
-      "term": "EGI Geodesic"
+      "term": "SVM"
     },
     {
       "term": "BIDS"
     },
     {
-      "term": "derivative"
+      "term": "HED"
     },
     {
-      "term": "moabb"
+      "term": "derivative"
     }
   ],
   "related_identifiers": [
@@ -116,5 +95,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "918fd4b4feb11813ef584e7a96c95b9a2939b339ba402493203a768ca8e26bd7"
+  "source_hash": "bce2f98c8875968e22025637160bd9a35eca7ca31628c192cd4c40c3b7ea0278"
 }
