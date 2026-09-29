@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Motor imagery dataset for three imaginary states of the same upper extremity",
-  "description": "This dataset contains EEG recordings from 12 healthy human subjects performing three-class motor imagery tasks involving the same upper extremity: rest, imagined grasping, and imagined elbow flexion. Data were collected across four sessions per subject using a 32-channel EEG system, and the dataset is a BIDS-formatted derivative of the original study on classifying imaginary motor states using time-domain features. The dataset supports research in brain-computer interfaces (BCI) for motor rehabilitation applications.",
-  "methods_description": "EEG data were recorded at a 1000 Hz sampling rate using a 32-channel EGI Geodesic Net Amps 400 system with GSN-HydroCel-32 montage, referenced to Cz, with online bandpass filtering (0.1-100 Hz) and a 60 Hz line frequency. Each of the 12 subjects completed 4 sessions, with 20 trials per class (rest, imagined grasping, imagined elbow flexion) per session, using visual cues in a synchronous, offline paradigm without feedback.",
+  "description": "EEG recordings from 12 healthy participants performing three-class motor imagery of the same (right) upper extremity: rest, right-hand grasping, and right elbow flexion. Each participant completed 4 sessions with 20 trials per class, recorded with a 32-channel EGI HydroCel system at 1000 Hz. The dataset supports research on brain-computer interfaces for motor control and rehabilitation, including time-domain feature extraction and SVM classification.",
+  "methods_description": "32-channel EEG was recorded with EGI Geodesic Net Amps 400 series (Ag/AgCl sponge electrodes, Cz reference, 1000 Hz, 0.1-100 Hz online bandpass, impedance below 50 kOhm). Visual cues instructed participants to rest, imagine grasping (opening and closing the fingers), or imagine elbow flexion (moving the forearm up and down). Each trial lasted 3 s, with 20 trials per class in each of 4 sessions. Features (autoregressive coefficients, waveform length, RMS) in the 6-35 Hz band were classified with an RBF SVM using 10x10-fold cross-validation.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -23,9 +23,6 @@
       "term": "brain-computer interface"
     },
     {
-      "term": "BCI"
-    },
-    {
       "term": "Upper Extremity",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D034941"
@@ -34,15 +31,7 @@
       "term": "support vector machine"
     },
     {
-      "term": "Rehabilitation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012046"
-    },
-    {
       "term": "time-domain features"
-    },
-    {
-      "term": "same limb"
     }
   ],
   "related_identifiers": [
@@ -83,7 +72,7 @@
     "eeg"
   ],
   "sizes": [
-    "55.8 GB (157 files)"
+    "51.97 GB (157 files)"
   ],
   "formats": [
     ".DAT",
