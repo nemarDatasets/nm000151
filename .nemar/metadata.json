@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Motor imagery dataset for three imaginary states of the same upper extremity",
-  "description": "EEG recordings from 12 healthy participants performing three-class motor imagery of the same (right) upper extremity: rest, right-hand grasping, and right elbow flexion. Each participant completed 4 sessions with 20 trials per class, recorded with a 32-channel EGI HydroCel system at 1000 Hz. The dataset supports research on brain-computer interfaces for motor control and rehabilitation, including time-domain feature extraction and SVM classification.",
-  "methods_description": "32-channel EEG was recorded with EGI Geodesic Net Amps 400 series (Ag/AgCl sponge electrodes, Cz reference, 1000 Hz, 0.1-100 Hz online bandpass, impedance below 50 kOhm). Visual cues instructed participants to rest, imagine grasping (opening and closing the fingers), or imagine elbow flexion (moving the forearm up and down). Each trial lasted 3 s, with 20 trials per class in each of 4 sessions. Features (autoregressive coefficients, waveform length, RMS) in the 6-35 Hz band were classified with an RBF SVM using 10x10-fold cross-validation.",
+  "description": "EEG recordings from 12 healthy participants performing three-class motor imagery of the same upper extremity: rest, hand grasping, and elbow flexion. Each participant completed 4 sessions of 20 trials per class, recorded with a 32-channel EGI HydroCel net at 1000 Hz. The dataset supports research on brain-computer interface classification of imagined movements within one limb, for example for rehabilitation and motor control.",
+  "methods_description": "32-channel EEG was recorded with EGI Geodesic Net Amps 400 series (Ag/AgCl sponge electrodes, Cz reference, 0.1-100 Hz online bandpass, impedance below 50 kOhm) at 1000 Hz. Visual cues instructed participants to rest, imagine opening and closing the fingers to grasp an object, or imagine moving the forearm up and down. Each trial lasted 3 s, with 20 trials per class in each of 4 sessions per subject.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -23,9 +23,7 @@
       "term": "brain-computer interface"
     },
     {
-      "term": "Upper Extremity",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D034941"
+      "term": "upper extremity"
     },
     {
       "term": "support vector machine"
