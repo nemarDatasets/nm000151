@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Motor imagery dataset for three imaginary states of the same upper extremity",
-  "description": "EEG recordings from 12 healthy participants performing three-class motor imagery of the same upper extremity: rest, hand grasping, and elbow flexion. Each participant completed 4 sessions of 20 trials per class, recorded with a 32-channel EGI HydroCel net at 1000 Hz. The dataset supports research on brain-computer interface classification of imagined movements within one limb, for example for rehabilitation and motor control.",
-  "methods_description": "32-channel EEG was recorded with EGI Geodesic Net Amps 400 series (Ag/AgCl sponge electrodes, Cz reference, 0.1-100 Hz online bandpass, impedance below 50 kOhm) at 1000 Hz. Visual cues instructed participants to rest, imagine opening and closing the fingers to grasp an object, or imagine moving the forearm up and down. Each trial lasted 3 s, with 20 trials per class in each of 4 sessions per subject.",
+  "description": "This dataset contains 32-channel EEG recordings from 12 healthy participants performing three-class motor imagery of the same (right) upper extremity: rest, hand grasping, and elbow flexion. Each participant completed 4 sessions of 20 trials per class, with visual cues. The data support brain-computer interface research for motor control and rehabilitation, including classification with time-domain features and SVM.",
+  "methods_description": "EEG was recorded at 1000 Hz with an EGI Geodesic Net Amps 400 series system (32 channels, Ag/AgCl sponge sensors, Cz reference, 0.1-100 Hz online bandpass). Participants followed visual cues to rest, imagine opening and closing the fingers to grasp an object, or imagine moving the forearm up and down. Each trial lasted 3 s. Classification used autoregressive coefficients, waveform length and RMS features with an RBF SVM, evaluated with 10x10-fold within-subject cross-validation.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -23,13 +23,24 @@
       "term": "brain-computer interface"
     },
     {
-      "term": "upper extremity"
+      "term": "Upper Extremity",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D034941"
+    },
+    {
+      "term": "time-domain features"
     },
     {
       "term": "support vector machine"
     },
     {
-      "term": "time-domain features"
+      "term": "elbow flexion"
+    },
+    {
+      "term": "grasp"
+    },
+    {
+      "term": "rehabilitation"
     }
   ],
   "related_identifiers": [
@@ -83,5 +94,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "300f4ca760ed22176083d0f1208b9826e08927c32e1c7c64317854ffb4144ffa"
+  "source_hash": "98cfe6dbddd12e232a9e6960da4a3ca12a10b5104e05656624639ae62632e7d1"
 }
